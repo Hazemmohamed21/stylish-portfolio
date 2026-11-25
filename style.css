@@ -1,0 +1,101 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    overflow-y: scroll !important;
+}
+.offcanvas {
+    width: 250px !important;
+    background-color: #1d809f;
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.offcanvas .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.offcanvas .list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+}
+
+.offcanvas .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+.hero-content {
+    min-height: calc(100vh - 80px);
+}
+header {
+    background-image: url("img/pencil.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#services {
+    background-color: #1d809f;
+}
+.image-section {
+    min-height: 700px;
+    background-image: url(img/bg-callout.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-item {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(29, 128, 159, 0.85);
+    opacity: 0;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+.portfolio-item:hover::before {
+    opacity: 1;
+    transform: scale(0.9);
+}
+.portfolio-content {
+    position: relative;
+    z-index: 2;
+}
+.portfolio-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+.portfolio-1::after {
+    background-image: url(img/portfolio-1.jpg);
+}
+.portfolio-2::after {
+    background-image: url(img/portfolio-2.jpg);
+}
+.portfolio-3::after {
+    background-image: url(img/portfolio-3.jpg);
+}
+.portfolio-4::after {
+    background-image: url(img/portfolio-4.jpg);
+}
+.portfolio-item:hover::after {
+    transform: scale(0.9);
+}
+.footer-icon {
+    background-color: #1d809f;
+    transition: 0.3s;
+}
+.footer-icon:hover {
+    background-color: #166b86;
+}

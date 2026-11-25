@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    <header id="home" class="min-vh-100">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-end p-3">
+          <button
+            class="btn btn-dark"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold">Start Bootstrap</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body p-0">
+          <div class="list-group list-group-flush">
+            <a href="#home" class="list-group-item list-group-item-action">
+              Home
+            </a>
+
+            <a href="#about" class="list-group-item list-group-item-action">
+              About
+            </a>
+
+            <a href="#services" class="list-group-item list-group-item-action">
+              Services
+            </a>
+
+            <a href="#portfolio" class="list-group-item list-group-item-action">
+              Portfolio
+            </a>
+
+            <a href="#contact" class="list-group-item list-group-item-action">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center text-center hero-content"
+      >
+        <h1 class="display-1 fw-bold">Stylish Portfolio</h1>
+        <p class="fs-4 fw-bold fst-italic">
+          A Free Bootstrap Theme by Start Bootstrap
+        </p>
+        <a href="#about" class="btn btn-primary px-4 py-3 mt-3"
+          >Find Out More</a
+        >
+      </div>
+    </header>
+    <section id="about" class="py-5">
+      <div class="container text-center py-5">
+        <h2 class="fw-bold">
+          Stylish Portfolio is the perfect theme for your next project!
+        </h2>
+        <p class="text-secondary fs-5 mt-3 mb-4">
+          This theme features a flexible, UX friendly sidebar menu and stock
+          photos from our friends at Unsplash!
+        </p>
+        <a href="#services" class="btn btn-dark px-4 py-3">What We Offer</a>
+      </div>
+    </section>
+    <section id="services" class="py-5 text-center text-white">
+      <div class="container py-5">
+        <div class="mb-5">
+          <span class="text-warning fw-bold">SERVICES</span>
+          <h2 class="display-5 fw-bold mt-2">What We Offer</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-12-sm col-lg-3 service">
+            <div class="mb-4">
+              <div
+                class="bg-white text-primary rounded-circle d-flex justify-content-center align-items-center mx-auto mb-4"
+                style="width: 120px; height: 120px"
+              >
+                <i class="icon-screen-smartphone fs-2"></i>
+              </div>
+              <h3 class="h4 fw-bold">Responsive</h3>
+              <p class="mb-0">Looks great on any screen size!</p>
+            </div>
+          </div>
+          <div class="col-12 col-12-sm col-lg-3 service">
+            <div class="mb-4">
+              <div
+                class="bg-white text-primary rounded-circle d-flex justify-content-center align-items-center mx-auto mb-4"
+                style="width: 120px; height: 120px"
+              >
+                <i class="icon-pencil fs-2"></i>
+              </div>
+              <h3 class="h4 fw-bold">Redesigned</h3>
+              <p class="mb-0">Freshly redesigned for Bootstrap 5.</p>
+            </div>
+          </div>
+          <div class="col-12 col-12-sm col-lg-3 service">
+            <div class="mb-4">
+              <div
+                class="bg-white text-primary rounded-circle d-flex justify-content-center align-items-center mx-auto mb-4"
+                style="width: 120px; height: 120px"
+              >
+                <i class="icon-like fs-2"></i>
+              </div>
+              <h3 class="h4 fw-bold">Favorited</h3>
+              <p class="mb-0">
+                Millions of users <i class="fas fa-heart opacity-50"></i> Start
+                Bootstrap!
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-12-sm col-lg-3 service">
+            <div class="mb-4">
+              <div
+                class="bg-white text-primary rounded-circle d-flex justify-content-center align-items-center mx-auto mb-4"
+                style="width: 120px; height: 120px"
+              >
+                <i class="icon-mustache fs-2"></i>
+              </div>
+              <h3 class="h4 fw-bold">Question</h3>
+              <p class="mb-0">I mustache you a question...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="image-section d-flex align-items-center">
+      <div class="container text-center">
+        <h2 class="fw-bold display-4 mb-4">
+          Welcome to your<br />next website!
+        </h2>
+        <a href="#portfolio" class="btn btn-primary px-4 py-3 mt-3"
+          >Download Now!</a
+        >
+      </div>
+    </section>
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <div class="text-center py-5">
+          <span class="text-warning fw-bold">Portfolio</span>
+          <h2 class="display-5 fw-bold mt-2">Recent Projects</h2>
+        </div>
+        <div class="row g-0">
+          <div class="col-12 col-lg-6">
+            <div class="portfolio-item d-flex align-items-end portfolio-1">
+              <div class="portfolio-content text-white p-5">
+                <h3 class="h6 fw-bold">STATIONARY</h3>
+                <p class="fs-6 mb-0">
+                  A yellow pencil with envelopes on a clean, blue backdrop!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="portfolio-item d-flex align-items-end portfolio-2">
+              <div class="portfolio-content text-white p-5">
+                <h3 class="h6 fw-bold">ICE CREAM</h3>
+                <p class="fs-6 mb-0">
+                  A dark blue background with colored pencil, a clip, and a tiny
+                  ice cream cone!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="portfolio-item d-flex align-items-end portfolio-3">
+              <div class="portfolio-content text-white p-5">
+                <h3 class="h6 fw-bold">STRAWBERRIES</h3>
+                <p class="fs-6 mb-0">
+                  Strawberries are such a tasty snack, especially with a little
+                  sugar on top!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="portfolio-item d-flex align-items-end portfolio-4">
+              <div class="portfolio-content text-white p-5">
+                <h3 class="h6 fw-bold">WORKSPACE</h3>
+                <p class="fs-6 mb-0">
+                  A yellow workspace with some scissors, pencils, and other
+                  objects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section bg-primary text-white text-center py-5">
+      <div class="container py-5">
+        <h2 class="fw-bold mb-4">
+          The buttons below are impossible to resist...
+        </h2>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="btn btn-light px-4 py-3">Click Me!</a>
+          <a href="#" class="btn btn-dark px-4 py-3">Look at Me!</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="map-section">
+      <iframe
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </section>
+    <footer class="py-5 text-center">
+      <div class="container">
+        <div class="d-flex justify-content-center gap-3 mb-5">
+          <a
+            href="#"
+            class="footer-icon text-white rounded-circle d-flex justify-content-center align-items-center"
+            style="width: 50px; height: 50px"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="footer-icon text-white rounded-circle d-flex justify-content-center align-items-center"
+            style="width: 50px; height: 50px"
+          >
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="footer-icon text-white rounded-circle d-flex justify-content-center align-items-center"
+            style="width: 50px; height: 50px"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="mb-0 text-secondary">Copyright © Your Website 2023</p>
+      </div>
+    </footer>
+    <button
+      id="backToTop"
+      class="btn btn-dark rounded-circle position-fixed bottom-0 end-0 m-4 s-none"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script>
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          backToTop.classList.remove("d-none");
+        } else {
+          backToTop.classList.add("d-none");
+        }
+      });
+
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
